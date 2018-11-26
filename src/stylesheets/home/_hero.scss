@@ -1,0 +1,21 @@
+#home__hero {
+  margin-bottom: 0;
+  background-image: url('/images/hero-bg.jpg');
+  position: relative;
+  .caption {
+    @include position(absolute, auto auto 100px 50%);
+    @include transform(translateX(-50%));
+    padding: 30px 50px;
+    background-color: rgba(#fff, 0.05);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 1px 3px 10px rgba(#fff, 0.01);
+    .title {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .subtitle {
+      font-size: 18px;
+    }
+  }
+}
